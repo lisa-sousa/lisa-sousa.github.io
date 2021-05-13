@@ -1,0 +1,259 @@
+/*
+ * Globals
+ */
+
+/* Links */
+
+
+a,
+a:focus,
+a:hover {
+  color: #63c8f6;
+}
+
+a:hover {
+text-decoration: none;
+color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Green */
+a.green,
+a.green:hover { color: green; }
+/* White */
+a.white,
+a.white:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0.001rem solid white;
+    }
+
+/*
+ * Base structure
+ */
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background:
+    radial-gradient( /*BLUE*/
+        circle at 50% 0,
+        rgba(0,0,255,.5),
+        rgba(0,0,255,0)
+        75%)
+    ,
+    radial-gradient(/*GREEN*/
+        circle at 6.7% 75%,
+        rgba(0,255,0,.5),
+        rgba(0,255,0,0)
+        75%)
+    ,
+     radial-gradient(/*RED*/
+        circle at 93.3% 75%,
+        rgba(255,0,0,.5),
+        rgba(255,0,0,0)
+        75%)
+     ,
+    url('../../assets/images/background/photo-1550353127-b0da3aeaa0ca-quality25.jpeg') no-repeat center center;
+   	animation: gradient 6000s infinite;  /*ease ;*/
+   	/* url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca') no-repeat center center; */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients */
+    /* https://onaircode.com/html-css-hero-image-background-examples/ */
+    /* https://codepen.io/P1N2O/pen/pyBNzX */
+}
+
+body {
+  color: #333;
+  text-align: left;
+}
+
+@keyframes gradient { /*Required. Percentage of the animation duration.*/
+	10% {
+		background-position: 0% 0%; /* The first value is the horizontal position and the second value is the vertical */
+	}
+}
+
+/*
+ * Footer
+ */
+footer {
+   width: 100%;
+   text-align: center;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.flip {
+  display: inline-block;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+/*
+ * Header
+ */
+#header {
+  text-align: center;
+  padding: 4em 0 4em 0; /* top right bottom left */
+}
+
+#header h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#header .avatar {
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  padding: 0.5em;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+#header .avatar img {
+  border-radius: 100%;
+  display: block;
+  width: 10em;
+}
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0 1em 0 0;
+}
+
+ul.icons li:last-child {
+   padding-right: 0;
+}
+
+/* List with circle */
+ul.bullets {
+  font-size: 1.1rem;
+  list-style-type: circle;
+  padding-right: 0;
+  color: white;
+}
+
+/*
+ * related to accordion menu
+ */
+.cv {
+  font-size: 2rem;
+  /* padding-top: 0.5rem; */
+}
+
+.accordion {
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+.panel {
+  margin-bottom: 0;
+  cursor: pointer;
+  outline: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.panel-content {
+  margin-left: 1rem;
+}
+
+.altmetric-embed {
+  padding-left: 0.3rem;
+}
+
+/* To center images */
+.center-image {
+    text-align: center;
+}
+
+/* Color Green */
+.color-title-text {
+  color: DeepSkyBlue;
+}
+
+/*
+ * To check
+ */
+nav ul, footer ul {
+    font-family: 'Ubuntu', sans-serif;
+    padding:20px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #fff;
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+
+.publication__link{
+    margin-top:5px !important;
+    margin-bottom:0px !important
+    }
+
+.publication__link-item{
+    font-size: 0.7em;
+    display:inline-block;
+    margin-right:5px;
+    margin-bottom:0px;
+    padding:0px 5px;
+    text-decoration:none;
+    border:1px solid #FF8C00;
+    border-radius:7px;
+    color:#FF8C00
+    }
+
+.publication__link-item:hover{
+    text-decoration:none !important;
+    color:#017091
+}
+
+/*
+ * References:
+       https://github.com/theacodes/thea.codes/blob/master/static/style.css
+       https://github.com/oliviaguest/oliviaguest.github.io/blob/master/css/style.css
+       https://github.com/rodluger/rodluger.github.io/blob/master/assets/css/main_2.0.1.css
+       https://github.com/praveenv253/praveenv253.github.io/blob/master/assets/css/main.css
+ */

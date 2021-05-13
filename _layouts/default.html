@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+
+	<!-- javescript to expand bibtex files -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<head>
+			<title>
+				{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}
+			</title>
+
+			{% include meta.html %}
+			{% include css.html %}
+			{% include js.html %}
+
+			<!-- Icons -->
+      		<!-- <link rel="shortcut icon" href="/images/favicon/favicon.ico"> -->
+
+			<!-- link to main stylesheet -->
+			<link href="http://gmpg.org/xfn/11" rel="profile">
+
+		</head>
+
+		<body>
+			<div class="container">
+			{{ content }}
+			{% include footer.html %}
+			</div>
+		</body>
+	</html>
