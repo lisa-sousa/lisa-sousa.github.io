@@ -13,7 +13,7 @@ a:hover {
 
 a:hover {
 text-decoration: none;
-color: white;
+color: black;
 }
 
 .hidden {
@@ -56,12 +56,8 @@ body {
         rgba(255,0,0,0)
         75%)
      ,
-    url('../../assets/images/background/photo-1550353127-b0da3aeaa0ca-quality25.jpeg') no-repeat center center;
+    url('../../assets/images/background/background.png') no-repeat center center;
    	animation: gradient 6000s infinite;  /*ease ;*/
-   	/* url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca') no-repeat center center; */
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients */
-    /* https://onaircode.com/html-css-hero-image-background-examples/ */
-    /* https://codepen.io/P1N2O/pen/pyBNzX */
 }
 
 body {
@@ -112,7 +108,7 @@ footer ul {
 
 #header h1 {
   font-size: 2.5rem;
-  color: white;
+  color: black;
 }
 
 #header .avatar {
@@ -151,7 +147,7 @@ ul.bullets {
   font-size: 1.1rem;
   list-style-type: circle;
   padding-right: 0;
-  color: white;
+  color: black;
 }
 
 /*
@@ -173,7 +169,7 @@ ul.bullets {
   cursor: pointer;
   outline: none;
   font-size: 2rem;
-  color: white;
+  color: black;
 }
 
 .panel-content {
