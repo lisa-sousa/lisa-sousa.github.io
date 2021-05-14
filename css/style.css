@@ -20,16 +20,6 @@ color: black;
   display: none;
 }
 
-/* Green */
-a.green,
-a.green:hover { color: green; }
-/* White */
-a.white,
-a.white:hover {
-    text-decoration: none;
-    color: black;
-    border-bottom: 0.001rem solid black;
-    }
 
 /*
  * Base structure
@@ -39,7 +29,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background:
     url('../../assets/images/background/background.png') no-repeat center center;
-   	animation: gradient 6000s infinite;  /*ease ;*/
 }
 
 body {
@@ -47,11 +36,6 @@ body {
   text-align: left;
 }
 
-@keyframes gradient { /*Required. Percentage of the animation duration.*/
-	10% {
-		background-position: 0% 0%; /* The first value is the horizontal position and the second value is the vertical */
-	}
-}
 
 /*
  * Footer
