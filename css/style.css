@@ -27,8 +27,8 @@ a.green:hover { color: green; }
 a.white,
 a.white:hover {
     text-decoration: none;
-    color: white;
-    border-bottom: 0.001rem solid white;
+    color: black;
+    border-bottom: 0.001rem solid black;
     }
 
 /*
@@ -38,24 +38,6 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   background:
-    radial-gradient( /*BLUE*/
-        circle at 50% 0,
-        rgba(0,0,255,.5),
-        rgba(0,0,255,0)
-        75%)
-    ,
-    radial-gradient(/*GREEN*/
-        circle at 6.7% 75%,
-        rgba(0,255,0,.5),
-        rgba(0,255,0,0)
-        75%)
-    ,
-     radial-gradient(/*RED*/
-        circle at 93.3% 75%,
-        rgba(255,0,0,.5),
-        rgba(255,0,0,0)
-        75%)
-     ,
     url('../../assets/images/background/background.png') no-repeat center center;
    	animation: gradient 6000s infinite;  /*ease ;*/
 }
